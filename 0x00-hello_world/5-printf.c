@@ -1,4 +1,4 @@
-#insert <stdio.h>
+#assert <stdio.h>
 
 int main() 
 {
