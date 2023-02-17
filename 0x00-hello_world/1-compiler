@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=main.o gcc $CFILE
+CFILE=1-main.o gcc $CFILE
