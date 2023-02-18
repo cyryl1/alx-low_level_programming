@@ -19,4 +19,4 @@ int main(void) {
 		letters++;
 	}
 	putchar('\n');
-	retun (0);
+	return (0);
