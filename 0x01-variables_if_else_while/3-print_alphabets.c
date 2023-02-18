@@ -18,9 +18,10 @@ int main(void)
 	} while (lower_case <= 'z');
 
 	do {
-		putchar(upper_case\n);
+		putchar(upper_case);
 		upper_case++;
 	} while (upper_case <= 'Z');
 
+	putchar('\n');
 	return (0);
 }
