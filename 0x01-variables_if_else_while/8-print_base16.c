@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i = 0;
+	int i,j = 0;
 
 	while (i < 10)
 	{
@@ -17,7 +17,6 @@ int main(void)
 		i++;
 	}
 
-	int j = 0;
 	
 	while (j < 6)
 	{
