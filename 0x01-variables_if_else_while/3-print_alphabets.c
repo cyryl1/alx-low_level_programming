@@ -22,7 +22,7 @@ int main(void)
 		upper_case++;
 	} while(upper_case <= 'Z');
 
-	putchar(\n);
+	putchar("\n");
 
 	return (0);
 }
