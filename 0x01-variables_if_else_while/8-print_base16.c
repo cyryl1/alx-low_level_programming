@@ -21,8 +21,10 @@ int main(void)
 	
 	while (j < 6)
 	{
-		putchar(j + 'a');
+		putchar(j + 'A');
 		j++;
 	}
+
+	putchar('\n');
 	return (0);
 }
