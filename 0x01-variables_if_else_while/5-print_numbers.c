@@ -7,7 +7,7 @@
  * Return: always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	char num;
 
@@ -15,5 +15,7 @@ int main (void)
 	{
 		printf("%d", num);
 	}
+
+	putchar('\n');
 	return (0);
 }
