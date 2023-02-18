@@ -20,7 +20,8 @@ int main(void)
 	do {
 		putchar(upper_case);
 		upper_case++;
-	} while(upper_case <= 'Z');
+	} while (upper_case <= 'Z');
 
+	putchar(\n)
 	return (0);
 }
