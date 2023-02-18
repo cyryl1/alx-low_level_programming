@@ -18,5 +18,5 @@ int main(void) {
 		}
 		letters++;
 	}
-	putchar('\n')
+	putchar('\n');
 	retun (0);
