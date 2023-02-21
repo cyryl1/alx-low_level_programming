@@ -13,13 +13,19 @@ void times_table(void)
 			product = i * j;
 
 			if (j == 0)
+			{
 				_putchar('0');
+			}
 			else if (product < 10)
+			{
 				_putchar(' ');
 				_putchar('0' + product);
+			}
 			else
-				_putchar('0' + product / 10);
-				_putchar('0' + product % 10);
+			{
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 1)0);
+			}
 
 			if (j != 9)
 			{
