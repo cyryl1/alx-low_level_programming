@@ -5,11 +5,11 @@
  *
  * Return: always 0 (success)
  */
-int main(void)
+void main(void)
 {
 	char *str = "_putchar\n";
 	int i;
-
+i
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
