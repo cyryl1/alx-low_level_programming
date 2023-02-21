@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet_x10: To print lowercase alphabets 10 times, with a new lines
+ * void - Entry point
+ *
+ * print_alphabet_x10: To print lowercase alphabets 10 times, followed with a new line
  *
  */
 
