@@ -4,7 +4,7 @@
  *
  * @n: The number of the times table to print
  *
- * If n is greater than 15 or less than 0 the function should not print anything
+ * If n is greater than 15 or less than 0 the function should not print
  */
 void print_times_table(int n)
 {
@@ -17,10 +17,10 @@ void print_times_table(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		for(j = 0; j <= n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			result = i * j;
-			
+
 			if (j == 0)
 			{
 				_putchar('0');
