@@ -5,7 +5,7 @@
  * Return: always 0 (success)
  */
 
-int main()
+int main(void)
 {
 	int sum = 0, i;
 
