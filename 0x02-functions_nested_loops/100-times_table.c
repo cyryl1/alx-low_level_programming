@@ -30,6 +30,6 @@ void print_times_table(int n)
 				printf(", %d", result);
 			}
 		}
-		printf('\n');
+		printf("\n");
 	}
 }
