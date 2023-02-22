@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-	int n = 50, a = 1, b = 2, i, c;
+	int i;
+	long long a = 1, b = 2, c;
 
 	printf("%d, %d, ", a, b);
 
-	for (i = 3; i <= n; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf("%lld", c);
 
 		if (i < n)
 		{
