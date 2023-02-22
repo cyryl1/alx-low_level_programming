@@ -7,6 +7,7 @@
 int main(void)
 {
 	int n = 50, a = 1, b = 2, i, c;
+
 	printf("%d, %d, ", a, b);
 
 	for (i = 3; i <= n; i++)
