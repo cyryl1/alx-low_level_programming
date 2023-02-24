@@ -8,25 +8,18 @@
 
 int main(void)
 {
-	long prime = 612852475143, div;
+	long long num = 612852475143, largest_factor = 1, i;
 
-	while (div < (prime / 2))
+	for (i = 2; i <= num; i++)
 	{
-		if ((prime % 2) == 0)
+		while (num % i == 0)
 		{
-			prime /= 2;
-			continue;
-		}
-
-		for (div = 3; div < (prime / 2); div += 2)
-		{
-			if ((prime % div) == 0)
-			{
-				prime /= div;
-			}
+			largest_factor = i;
+			num /= i;
 		}
 	}
-	printf("%1d\n", prime);
+
+	printf("%11d\n", largest_factor);
 
 	return (0);
 }
