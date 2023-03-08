@@ -9,14 +9,14 @@ int factorial(int n)
 {
 	if (n < 0)
 	{
-		return (-1); //Error: invalid argument
+		return (-1); /*Error: invalid argument*/
 	}
 	else if (n == 0)
 	{
-		return (1);// base case.
+		return (1);/*base case.*/
 	}
 	else
 	{
-		return (n * factorial(n - 1)); // Recursive case
+		return (n * factorial(n - 1)); /*Recursive case*/
 	}
 }
