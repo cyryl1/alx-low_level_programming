@@ -1,5 +1,5 @@
 #include "main.h"
-#include "palindrome-helper.c"
+#include "palidrome-helper.c"
 /**
  * is_palindrome - Determines if a string is a palindrome.
  * @s: The string to check for palindromicity.
