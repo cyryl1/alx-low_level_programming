@@ -5,7 +5,6 @@
 int _putchar(char c);
 int _sqrt_helper(int n, int guess);
 int is_prime_helper(int n, int i);
-int is_palindrome_helper(char *s, int start, int end);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
