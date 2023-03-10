@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entery point for the program
  * @argc: The number of command-line arguments
