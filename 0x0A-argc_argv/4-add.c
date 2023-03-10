@@ -5,9 +5,10 @@
  * main - Entry Point
  * @argc: arguments
  * @argv: array pointing to arguments
- * Return: 0
+ *
+ * Return: always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argc[])
 {
 	int i, sum = 0;
 
