@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * main - Entery point for the program
  * @argc: The number of command-line arguments
@@ -7,13 +7,13 @@
  *
  * Return: Always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc,  __attribute__((unused)) char *argv[])
 {
-	int num_args;
+	int i;
 
-	num_args = argc - 1;
-
-	printf("%d\n", num_args);
-
+	for (i = 0; i < argc; i++)
+	{
+	}
+	printf("%d\n", i - 1);
 	return (0);
 }
