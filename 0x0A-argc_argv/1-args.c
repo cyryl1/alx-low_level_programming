@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int num_arrgs;
+	int num_args;
 
 	/* Calculate the number of arguments passed, excluding the program name*/
 	num_args = argc - 1;
