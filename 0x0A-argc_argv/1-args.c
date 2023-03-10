@@ -10,10 +10,8 @@ int main(int argc, char *argv[])
 {
 	int num_args;
 
-	/* Calculate the number of arguments passed, excluding the program name*/
 	num_args = argc - 1;
 
-	/* Print the number of arguments followed by a newline character*/
 	printf("%d\n", num_args);
 
 	return (0);
