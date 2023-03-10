@@ -1,27 +1,30 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - Entery point for the program
- * @argc: the number of command-line arguments
- * @argv: An array of strings containing the arguments
- *
- * Return: 0 if successful, 1 if there was an error
+ * main - Entery point
+ * atoi is a function that converts a string to an integer
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]);
 {
-	int num1, num2, result;
+	int i, res = 1;
 
-	if (arg != 3)
+	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-
-	printf("%d\n", result);
-
+	else
+	{
+		for (i =1; i < argc; i++)
+		{
+			res *= atoi(argv[i]);
+		}
+		printf("%d\n", res);
+	}
 	return (0);
 }
