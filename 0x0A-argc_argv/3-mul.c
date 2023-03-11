@@ -1,15 +1,14 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * main - Entery point
- * atoi is a function that converts a string to an integer
+ * main - Entry Point
+ * atoi is a function that converts a string into an int
  * @argc: arguments
  * @argv: array pointing to arguments
  * Return: 0
  */
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
 	int i, res = 1;
 
@@ -20,7 +19,7 @@ int main(int argc, char *argv[]);
 	}
 	else
 	{
-		for (i =1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			res *= atoi(argv[i]);
 		}
