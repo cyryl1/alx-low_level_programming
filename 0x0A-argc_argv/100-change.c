@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+int change(int cents);
 /**
- * main - Entry point
+ * main - Entry Point
  * @argc: arguments
  * @argv: array pointing to arguments
  * Return: 0
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", change(atoi(argv[1])));
-	retutn (0);
+	return (0);
 }
 
 /**
