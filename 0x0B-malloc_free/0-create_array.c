@@ -10,7 +10,7 @@
  * Return: a pointer to the ar,ray, or Null if it fails
  */
 
-char *create _array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
 	{
