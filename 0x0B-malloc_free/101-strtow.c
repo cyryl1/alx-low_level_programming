@@ -14,7 +14,7 @@ char **strtow(char *str)
 	int i, j, k, len = strlen(str), word_count, word_len;
 	char **words, *word;
 
-	if (str == NULL || str == '\0')
+	if (str == NULL || str == `\0`)
 	{
 		return (NULL);
 	}
@@ -46,7 +46,7 @@ char **strtow(char *str)
 				free(words);
 				return (NULL);
 			}
-			strncpy(word, str _ i, word_len);
+			strncpy(word, str + i, word_len);
 			word[word_len] = '\0';
 			words[word_count++] = word;
 			i = j;
