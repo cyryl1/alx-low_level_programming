@@ -5,7 +5,7 @@
 /**
  * _strdup - to return a pointer to a new string
  * and duplicte of the string
- * 
+ *
  * @str: the string to be duplicated
  *
  * Return: pointer to the duplicated string
@@ -28,5 +28,5 @@ char *_strdup(char *str)
 
 	strcpy(dup_str, str);
 
-	return dup_str;
+	return (dup_str);
 }
