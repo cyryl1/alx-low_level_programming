@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * alloc_grid - to return pointer to a 2 dimensional array 
+ * alloc_grid - to return pointer to a 2 dimensional array
  * of integers
  *
  * @width: column of the array
@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 		{
 			for (j = 0; j < i; j++)
 			{
-				free (grid[j]);
+				free(grid[j]);
 			}
 			free(grid);
 			return (NULL);
