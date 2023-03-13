@@ -14,7 +14,7 @@ char **strtow(char *str)
 	int i, j, k, len = strlen(str), word_count, word_len;
 	char **words, *word;
 
-	if (str == NULL || str == `\0`)
+	if (str == NULL || strlen(str) ==0)
 	{
 		return (NULL);
 	}
