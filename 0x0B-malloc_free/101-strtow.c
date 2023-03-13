@@ -11,10 +11,11 @@
  */
 char **strtow(char *str)
 {
-	if (str == NULL || strlen(str) == 0)
-		return (NULL);
+        int i, j, num_words = 0, word_index = 0, word_length = 0, start_index;
+	char **words, *words
 
-        int i, j, num_words = 0, word_index = 0, word_length = 0;
+	if (str == NULL || str == '\0')
+		return (NULL);
 
         for (i = 0; i < strlen(str); i++)
         {
@@ -22,7 +23,7 @@ char **strtow(char *str)
                         num_words++;
         }
 
-        char **words = malloc((num_words + 1) * sizeof(char *));
+        words = malloc((num_words + 1) * sizeof(char *));
         if (words == NULL)
                 return (NULL);
 
@@ -32,7 +33,7 @@ char **strtow(char *str)
                         word_length++;
                 else if (word_length > 0)
                 {
-                        char *word = malloc((word_length + 1) * sizeof(char));
+			word = malloc((word_length + 1) * sizeof(char));
                         if (word == NULL)
                         {
                                 for (j = 0; j < word_index; j++)
@@ -41,7 +42,7 @@ char **strtow(char *str)
                                 return (NULL);
                         }
 
-                        int start_index = i - word_length;
+                        start_index = i - word_length;
                         for (j = 0; j < word_length; j++)
                                 word[j] = str[start_index + j];
                         word[word_length] = '\0';
@@ -53,7 +54,7 @@ char **strtow(char *str)
 
         if (word_length > 0)
         {
-                char *word = malloc((word_length + 1) * sizeof(char));
+                word = malloc((word_length + 1) * sizeof(char));
                 if (word == NULL)
                 {
                         for (j = 0; j < word_index; j++)
@@ -62,7 +63,7 @@ char **strtow(char *str)
                         return (NULL);
                 }
 
-                int start_index = strlen(str) - word_length;
+                start_index = strlen(str) - word_length;
                 for (j = 0; j < word_length; j++)
                         word[j] = str[start_index + j];
                 word[word_length] = '\0';
