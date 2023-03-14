@@ -15,7 +15,7 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	int n_words = 0, i, len, j;
+	int i, len, j, n_words = 0;
 	char *tmp = str, **words, *word_start, *word;
 
 	while (*tmp != '\0')
@@ -79,6 +79,6 @@ char **strtow(char *str)
 		}
 	}
 
-	words[n_words] NULL;
+	words[n_words] =  NULL;
 	return (words);
 }
