@@ -15,7 +15,7 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	int i, len, j, n_words = 0;
+	int i = 0, len = 0, n_words = 0;
 	char *tmp = str, **words, *word_start, *word;
 
 	while (*tmp != '\0')
@@ -42,11 +42,9 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	i = 0;
 	tmp = str;
 	while (*tmp != '\0')
 	{
-		len = 0;
 		while (*tmp == ' ')
 		{
 			++tmp;
@@ -64,7 +62,7 @@ char **strtow(char *str)
 			word = malloc((len + 1) * sizeof(char));
 			if (word == NULL)
 			{
-				for (j = 0; j < i; ++j)
+				for (int j = 0; j < i; ++j)
 				{
 					free(words[j]);
 				}
