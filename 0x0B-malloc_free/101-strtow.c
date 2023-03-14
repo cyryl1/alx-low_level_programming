@@ -62,12 +62,12 @@ char **strtow(char *str)
 
 		if (len > 0)
 		{
-			word = malloc((len + 1) * sizeof(char));
-			if (word == NULL)
+			word[j] = malloc((len + 1) * sizeof(char));
+			if (word[j] == NULL)
 			{
 				for (j = 0; j < i; ++j)
 				{
-					free(*word[j]);
+					free(word[j]);
 				}
 				free(word);
 				return (NULL);
