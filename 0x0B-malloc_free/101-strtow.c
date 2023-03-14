@@ -10,13 +10,13 @@
  */
 char **strtow(char *str)
 {
+	int i, j, len, n_words;
+	char *tmp = str, **words, *words_start, *words;
+
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
-
-	int i, j, len, n_words;
-	char *tmp = str, **words, *word_start, *word;
 
 	while (*tmp != '\0')
 	{
