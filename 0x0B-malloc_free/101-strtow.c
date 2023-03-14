@@ -67,13 +67,13 @@ char **strtow(char *str)
 			{
 				for (j = 0; j < i; ++j)
 				{
-					free(word[j]);
+					free(*word[j]);
 				}
 				free(word);
 				return (NULL);
 			}
 
-			strncpy(word, word_start, len);
+			strncpy(word, words_start, len);
 			word[len] = '\0';
 			words[i] = word;
 			++i;
