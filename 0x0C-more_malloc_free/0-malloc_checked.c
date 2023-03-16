@@ -8,12 +8,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *p = malloc(b);
+	void;
+
+	p = malloc(b);
 
 	if (p == NULL)
 	{
-		printf("malloc failed: %s\n", strerror(errno));
 		exit(98);
 	}
-	return p;
+	return (p);
 }
