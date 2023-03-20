@@ -12,5 +12,5 @@ int main(void)
 	double b = -3.14159;
 	printf("ABS(%d) = %d\n", a, ABS(a));
 	printf("ABS(%.2f) = %.2f\n", b, ABS(b));
-	return 0;
+	return (0);
 }
