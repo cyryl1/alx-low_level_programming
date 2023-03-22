@@ -9,6 +9,17 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != 0 && f != 0)
-		f(name);
+	f(name);
+}
+
+void print_to_console(char *name)
+{
+	printf("Hello, %s!\n", name);
+}
+
+int main()
+{
+	char *name = "Alice";
+	print_name(name, print_to_console);
+	return (0);
 }
