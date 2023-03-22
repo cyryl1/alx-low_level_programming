@@ -13,7 +13,7 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-#endif
+#endif /* STRUCT_H */
 
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
@@ -23,4 +23,4 @@ int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
-#endif
+#endif /* FUNCTIONS_H */
