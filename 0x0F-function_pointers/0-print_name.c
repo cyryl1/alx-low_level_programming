@@ -1,3 +1,5 @@
+#include "function_pointers.h"
+
 /**
  * print_name - f points to either func in main
  * @name: name
