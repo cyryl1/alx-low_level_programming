@@ -6,7 +6,7 @@
  *
  * Return: no return.
  */
-void print_all(const char * const fomat, ...)
+void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, c = 0;
@@ -17,9 +17,9 @@ void print_all(const char * const fomat, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (t_args[j])
+		while (t_arg[j])
 		{
-			if (format[i] == t_args[j] && c)
+			if (format[i] == t_arg[j] && c)
 			{
 				printf(", ");
 				break;
