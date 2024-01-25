@@ -1,0 +1,11 @@
+CC = gcc
+SRC = main.c school.c
+EXE = school
+
+all: $(EXE)
+
+$(EXE): $(SRC)
+	$(CC) $(SRC) -o $(EXE)
+
+clean:
+	rm -f $(EXE)
