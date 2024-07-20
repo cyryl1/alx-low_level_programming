@@ -7,6 +7,8 @@
 #include <stddef.h>
 #include <math.h>
 
+#define min(a, b) (((a) < (b)) ? (a) :(b))
+
 /**
  * struct listint_s - singly linked list
  *
